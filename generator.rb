@@ -37,8 +37,11 @@ categoryrequests = Hash.new(0)
 if input == []
   # categoryrequests[]
   total_tests = 0
-  until total_tests > 4
-    cat = categories.sample
+  until total_tests > 3
+    # debugger
+    new_categories = categories.dup
+    cat = new_categories.sample
+    new_categories.delete(cat)
     num = [*1..2].sample
     categoryrequests[cat] = num
     total_tests = categoryrequests.values.reduce(:+)
