@@ -7,7 +7,7 @@
 2. Navigate to the folder in terminal and run
 `ruby generator.rb`
 
-3. Input your practice test requests in the form `category: # of problems` (or just press enter and have a totalyl random test generated for you.)
+3. Input your practice test requests in the form `category: # of problems` (or just press enter and have a random test generated for you.)
 
 4. You will now have three new files: `practice_test.rb`, `spec.rb` and `solutions.rb`. These should be self explanatory. Run `bundle exec rspec spec.rb` to test your answers against the spec as you work through the practice assessment.
 
